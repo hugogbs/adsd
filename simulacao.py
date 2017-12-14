@@ -47,7 +47,8 @@ class Simulacao:
     def simular(self):
         for n in xrange(self.qtd_repeticoes):
             inicio = time.time()
-            qtd_requisicoes = 0
+            qtd_requisicoes_fila = 0
+            fila_len_counter = 0
             resultado = ""
             print(n)
             
@@ -66,7 +67,6 @@ class Simulacao:
                         self.servidor_livre = True
                     print self.tempo_att                     
                     self.tempo_att += (tempo_saida - self.entrada_server)
-                    self.print_estado_sistema()
 
                 # Quando se atinge o momento de chegada de um elemento na lista 1
                 if self.proxima_chegada == self.momento:
@@ -76,9 +76,10 @@ class Simulacao:
                         self.aloca_servidor()
                     else:
                         self.fila.append(time.time())
-                    self.print_estado_sistema()
+                        qtd_requisicoes_fila += 1
+                        fila_len_counter += len(self.fila)
             self.media_tempo_att = self.tempo_att / self.qtd_req_atendidas
-            print self.media_tempo_att  
+            self.media_elem_espera = float(fila_len_counter) / qtd_requisicoes_fila
             self.print_estado_sistema()				
 
     def escalona_chegada_fila(self):
@@ -89,15 +90,14 @@ class Simulacao:
         self.termino = random.randint(3, 7) + self.momento
         self.entrada_server = time.time()
 
-    def print_estado_sistema(self):
-        
+    def print_estado_sistema(self):        
         self.f.write("Distribuição de probabilidade: " + self.tipo_distribuicao + ", com parâmetros: " + str(self.parametros) + "\n" +
         "Valor médio:" + str(self.valor_medio_tempo) + "\n" +
         "Duração da Simulação:" + str(self.duracao)   + "\n" +
         "Quantidade de Requisições recebidas:" + str(self.qtd_req_recebidas) + "\n" +
         "Quantidade de Requisições atendidas:" + str(self.qtd_req_atendidas)  + "\n" +
         "Tempo médio de atendimento:" + str(self.media_tempo_att) + "\n" +
-        "Quantidade média de elementos em espera:" + "\n" +
+        "Quantidade média de elementos em espera:" + str(self.media_elem_espera) + "\n" +
         "\n\n")
 
 sim = Simulacao("normal",1)
