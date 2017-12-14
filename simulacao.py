@@ -3,6 +3,7 @@
 
 import random
 import time
+import numpy as np
 
 class Simulacao:
 	
@@ -11,7 +12,7 @@ class Simulacao:
     momento = 0
     
     tipo_distribuicao = "normal"
-    parametros = [3,1]
+    parametros = [0,0.1,1000]
     valor_medio_tempo = 4
     duracao = 5
     qtd_repeticoes = 1
@@ -34,11 +35,11 @@ class Simulacao:
         
     def get_distribuicao(self):
         if self.tipo_distribuicao == "normal":
-            return random.randint(1, 10)
+            return np.random.choice(np.random.normal(self.parametros[0],self.parametros[1],self.parametros[2]))
         elif self.tipo_distribuicao == "exponencial":
-            return random.randint(1, 10)
+            return np.random.choice(np.random.exponencial(self.parametros[0],self.parametros[1]))
         elif self.tipo_distribuicao == "uniforme":
-            return random.randint(1, 10)
+            return np.random.choice(np.random.uniform(self.parametros[0],self.parametros[1]))
 			
     def run(self):		
         self.distribuicao = self.get_distribuicao()
@@ -54,7 +55,6 @@ class Simulacao:
             
             self.escalona_chegada_fila()
             while(self.duracao > time.time() - inicio):
-                #print(time.time() - inicio,self.duracao)
                 self.momento = self.momento + 1
                 # Quando se atinge o momento de término de uso do servidor
                 if self.termino == self.momento:
@@ -87,7 +87,7 @@ class Simulacao:
 
     def aloca_servidor(self):
         self.servidor_livre = False
-        self.termino = random.randint(3, 7) + self.momento
+        self.termino = np.random.choice(np.random.exponencial(self.parametros[0],self.parametros[2])) + self.momento
         self.entrada_server = time.time()
 
     def print_estado_sistema(self):        
