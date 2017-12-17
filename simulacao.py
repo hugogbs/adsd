@@ -9,10 +9,11 @@ class Simulacao:
 	
     proxima_chegada = -1
     termino = -1
+    dist_termino = []
     momento = 0
     
     tipo_distribuicao = "normal"
-    parametros = [0,0.1,1000]
+    parametros = [0,0.1,1000000]
     valor_medio_tempo = 4
     duracao = 5
     qtd_repeticoes = 1
@@ -35,14 +36,15 @@ class Simulacao:
         
     def get_distribuicao(self):
         if self.tipo_distribuicao == "normal":
-            return np.random.choice(np.random.normal(self.parametros[0],self.parametros[1],self.parametros[2]))
+            return np.random.normal(self.parametros[0],self.parametros[1],self.parametros[2])
         elif self.tipo_distribuicao == "exponencial":
-            return np.random.choice(np.random.exponencial(self.parametros[0],self.parametros[1]))
+            return np.random.exponential(self.parametros[0],self.parametros[2])
         elif self.tipo_distribuicao == "uniforme":
-            return np.random.choice(np.random.uniform(self.parametros[0],self.parametros[1]))
+            return np.random.uniform(self.parametros[0],self.parametros[1],self.parametros[2])
 			
     def run(self):		
         self.distribuicao = self.get_distribuicao()
+        self.dist_termino = np.random.exponential(1,self.parametros[2])
         self.simular()
     
     def simular(self):
@@ -55,21 +57,19 @@ class Simulacao:
             
             self.escalona_chegada_fila()
             while(self.duracao > time.time() - inicio):
-                self.momento = self.momento + 1
                 # Quando se atinge o momento de término de uso do servidor
-                if self.termino == self.momento:
+                if abs(self.dist_termino[self.termino]) <= time.time() - inicio:
                     self.qtd_req_atendidas += 1
                     tempo_saida = time.time()
                     if self.fila:
                         self.aloca_servidor()
                         self.fila.pop()
                     else:
-                        self.servidor_livre = True
-                    print self.tempo_att                     
-                    self.tempo_att += (tempo_saida - self.entrada_server)
+                        self.servidor_livre = True                               
+                    self.tempo_att += abs(tempo_saida - self.entrada_server)
 
                 # Quando se atinge o momento de chegada de um elemento na lista 1
-                if self.proxima_chegada == self.momento:
+                if self.proxima_chegada <= time.time() - inicio:
                     self.qtd_req_recebidas += 1
                     self.escalona_chegada_fila()
                     if self.servidor_livre:
@@ -83,11 +83,13 @@ class Simulacao:
             self.print_estado_sistema()				
 
     def escalona_chegada_fila(self):
-        self.proxima_chegada = self.distribuicao + self.momento
+        print self.momento
+        self.proxima_chegada = abs(self.distribuicao[self.momento])
+        self.momento += 1
 
     def aloca_servidor(self):
         self.servidor_livre = False
-        self.termino = np.random.choice(np.random.exponencial(self.parametros[0],self.parametros[2])) + self.momento
+        self.termino += 1
         self.entrada_server = time.time()
 
     def print_estado_sistema(self):        
@@ -100,5 +102,5 @@ class Simulacao:
         "Quantidade média de elementos em espera:" + str(self.media_elem_espera) + "\n" +
         "\n\n")
 
-sim = Simulacao("normal",1)
+sim = Simulacao("uniforme",1)
 sim.run()
