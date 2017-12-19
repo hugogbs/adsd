@@ -27,12 +27,16 @@ class Simulacao:
     media_tempo_att = 0
     tempo_att = 0
     
-    entrada_server = 0
-	
-    def __init__(self, tipo_distribuicao, qtd_repeticoes):
+    entrada_server = 0	
+
+    def __init__(self, tipo_distribuicao, qtd_repeticoes, parametros, valor_medio_tempo, duracao):
         self.qtd_repeticoes = qtd_repeticoes
         self.tipo_distribuicao = tipo_distribuicao
-        self.f = open('resultado', 'w')
+        self.parametros = parametros
+        self.valor_medio_tempo = valor_medio_tempo
+        self.duracao = duracao
+       
+        self.f = open('resultado_uni.txt', 'w')
         
     def get_distribuicao(self):
         if self.tipo_distribuicao == "normal":
@@ -54,12 +58,23 @@ class Simulacao:
             fila_len_counter = 0
             resultado = ""
             self.momento = 0
+            
+            self.proxima_chegada = -1
+            self.termino = -1
+            
+            self.fila = []
+            self.qtd_req_recebidas = 0
+            self.qtd_req_atendidas = 0
+            self.media_elem_espera = 0
+            self.media_tempo_att = 0
+            self.tempo_att = 0		
+            self.entrada_server = 0
             print(n)
             
             self.escalona_chegada_fila()
             while(self.duracao > time.time() - inicio):
                 # Quando se atinge o momento de término de uso do servidor
-                if abs(self.dist_termino[self.termino]) <= time.time() - inicio:
+                if self.dist_termino[self.termino] <= time.time() - inicio:
                     self.qtd_req_atendidas += 1
                     tempo_saida = time.time()
                     if self.fila:
@@ -103,5 +118,5 @@ class Simulacao:
         "Quantidade média de elementos em espera:" + str(self.media_elem_espera) + "\n" +
         "\n\n")
 
-sim = Simulacao("normal",5)
+sim = Simulacao("normal",5,[0,0.1,1000000],4,5)
 sim.run()
