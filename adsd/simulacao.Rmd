@@ -1,0 +1,23 @@
+---
+title: "Simulação"
+author: "Dandara Sousa"
+date: "18 de dezembro de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(readr)
+library(ggplot2)
+
+resultados <- read.csv("Resultados.csv")
+
+resultados %>%
+  filter(Rede == 3) %>%
+  ggplot(aes(y = Quantidade.de.Requisicoes.recebidas, x = Quantidade.de.Requisicoes.atendidas)) + geom_point()
+
+# colocar as outras redes
+resultados %>%
+  ggplot(aes(x = Rede, y = Quantidade.de.Requisicoes.recebidas )) + geom_boxplot()
+```

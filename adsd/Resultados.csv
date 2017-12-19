@@ -1,0 +1,6 @@
+Rede,Distribuicao de probabilidade,Valor Medio,Duracao da Simulacao,Quantidade de Requisicoes recebidas,Quantidade de Requisicoes atendidas,Tempo medio de atendimento,Quantidade media de elementos em espera
+3,"uniforme, com parametros: [0, 0.1, 1000000]",4,5,6877,250,1.59997940063e-05,3392.09525887
+3,"uniforme, com parametros: [0, 0.1, 1000000]",4,5,6650,466,6.43730163574e-06,3241.78748684
+3,"uniforme, com parametros: [0, 0.1, 1000000]",4,5,6522,82,1.2194238058e-05,3229.10136482
+3,"uniforme, com parametros: [0, 0.1, 1000000]",4,5,6656,1,0,3327.00916604
+3,"uniforme, com parametros: [0, 0.1, 1000000]",4,5,6170,203,9.85267714327e-06,2985.18430864
