@@ -53,6 +53,7 @@ class Simulacao:
             qtd_requisicoes_fila = 0
             fila_len_counter = 0
             resultado = ""
+            self.momento = 0
             print(n)
             
             self.escalona_chegada_fila()
@@ -102,5 +103,5 @@ class Simulacao:
         "Quantidade média de elementos em espera:" + str(self.media_elem_espera) + "\n" +
         "\n\n")
 
-sim = Simulacao("uniforme",1)
+sim = Simulacao("normal",5)
 sim.run()
