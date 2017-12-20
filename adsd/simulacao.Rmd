@@ -13,11 +13,20 @@ library(ggplot2)
 
 resultados <- read.csv("Resultados.csv")
 
-resultados %>%
-  filter(Rede == 3) %>%
-  ggplot(aes(y = Quantidade.de.Requisicoes.recebidas, x = Quantidade.de.Requisicoes.atendidas)) + geom_point()
-
-# colocar as outras redes
-resultados %>%
-  ggplot(aes(x = Rede, y = Quantidade.de.Requisicoes.recebidas )) + geom_boxplot()
 ```
+
+
+```{r}
+resultados %>%
+  ggplot(aes(y = Quantidade.de.Requisições.recebidas, x = Quantidade.de.Requisições.atendidas, colour = Distribuição.de.probabilidade)) + geom_point() + labs(title = "Relação entre requisições atendidas e recebidas", x = "Quantidade de requisições atendidas", y = "Quantidade de requisições recebidas", colour = "Distribuição de probabilidade")
+```
+```{r}
+resultados %>%
+  ggplot(aes(x = Tempo.médio.de.atendimento, y = Quantidade.de.Requisições.atendidas, colour = Distribuição.de.probabilidade)) + geom_line() + labs(title = "Relação entre requisições atendidas e tempo de atendimento", x = "Tempo médio de atendimento", y = "Quantidade de requisições recebidas", colour = "Distribuição de probabilidade")
+```
+
+```{r}
+resultados %>%
+  ggplot(aes(x = Distribuição.de.probabilidade, y = Quantidade.de.Requisições.recebidas )) + geom_boxplot()+ geom_point(size = .5) + labs(title = "Distribuição das requisições recebidas por distribuição de probabilidade", x = "Distribuição de probbabilidade", y = "Quantidade de requisições recebidas")
+```
+
