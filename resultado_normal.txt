@@ -1,0 +1,135 @@
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:238138
+Quantidade de Requisições atendidas:214492
+Tempo médio de atendimento:0.382771998842
+Quantidade média de elementos em espera:118998.44281
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:237618
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:4.44015899262e-07
+Quantidade média de elementos em espera:118737.697952
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:256224
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:1.04470686479e-06
+Quantidade média de elementos em espera:128044.969605
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:257225
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:8.77504224901e-07
+Quantidade média de elementos em espera:128546.31736
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:247854
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:8.38490275594e-07
+Quantidade média de elementos em espera:123859.033322
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:241955
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:9.0165571733e-07
+Quantidade média de elementos em espera:120907.076841
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:252873
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:8.75646417791e-07
+Quantidade média de elementos em espera:126369.401719
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:233673
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:9.75968001725e-07
+Quantidade média de elementos em espera:116763.664685
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:237129
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:9.32619169161e-07
+Quantidade média de elementos em espera:118492.685644
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:252354
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:7.31976001294e-07
+Quantidade média de elementos em espera:126109.574241
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:227920
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:8.63880306095e-07
+Quantidade média de elementos em espera:113885.272153
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:240265
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:4.70644467837e-07
+Quantidade média de elementos em espera:120062.246395
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:248521
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:9.12802559989e-07
+Quantidade média de elementos em espera:124191.947236
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:247689
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:8.4654077307e-07
+Quantidade média de elementos em espera:123775.800165
+
+
+Distribuição de probabilidade: normal, com parâmetros: [0, 0.4, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:249737
+Quantidade de Requisições atendidas:385
+Tempo médio de atendimento:7.31976001294e-07
+Quantidade média de elementos em espera:124800.596732
+
+

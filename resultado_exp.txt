@@ -1,0 +1,135 @@
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:23177
+Quantidade de Requisições atendidas:25103
+Tempo médio de atendimento:0.359233382859
+Quantidade média de elementos em espera:11549.1591507
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:3369
+Quantidade de Requisições atendidas:843677
+Tempo médio de atendimento:0.644984783141
+Quantidade média de elementos em espera:1655.04338782
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:12789
+Quantidade de Requisições atendidas:42
+Tempo médio de atendimento:1.03882380894e-06
+Quantidade média de elementos em espera:6355.15990304
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:21650
+Quantidade de Requisições atendidas:122031
+Tempo médio de atendimento:1513231884.74
+Quantidade média de elementos em espera:10785.1536863
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:4091
+Quantidade de Requisições atendidas:544510
+Tempo médio de atendimento:1513626496.7
+Quantidade média de elementos em espera:2009.7432697
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:11151
+Quantidade de Requisições atendidas:223648
+Tempo médio de atendimento:0.230201568928
+Quantidade média de elementos em espera:5536.91587444
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:17089
+Quantidade de Requisições atendidas:204664
+Tempo médio de atendimento:0.465627392094
+Quantidade média de elementos em espera:8504.81224394
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:18364
+Quantidade de Requisições atendidas:967242
+Tempo médio de atendimento:725012963.841
+Quantidade média de elementos em espera:9145.96797211
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:6130
+Quantidade de Requisições atendidas:592014
+Tempo médio de atendimento:1513635662.87
+Quantidade média de elementos em espera:3027.62138776
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:11156
+Quantidade de Requisições atendidas:586844
+Tempo médio de atendimento:0.69769795173
+Quantidade média de elementos em espera:5538.32879046
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:20364
+Quantidade de Requisições atendidas:574850
+Tempo médio de atendimento:827576431.493
+Quantidade média de elementos em espera:10144.4277715
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:20180
+Quantidade de Requisições atendidas:204747
+Tempo médio de atendimento:1513437389.82
+Quantidade média de elementos em espera:10053.9981663
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:11538
+Quantidade de Requisições atendidas:1659519
+Tempo médio de atendimento:407725605.09
+Quantidade média de elementos em espera:5738.83045703
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:10435
+Quantidade de Requisições atendidas:265395
+Tempo médio de atendimento:0.125042334434
+Quantidade média de elementos em espera:5182.45471101
+
+
+Distribuição de probabilidade: exponencial, com parâmetros: [0, 0.5, 1000000]
+Valor médio:4
+Duração da Simulação:5
+Quantidade de Requisições recebidas:1583
+Quantidade de Requisições atendidas:42
+Tempo médio de atendimento:1.15235646566e-06
+Quantidade média de elementos em espera:771.394819962
+
+

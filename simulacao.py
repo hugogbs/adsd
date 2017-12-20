@@ -36,23 +36,23 @@ class Simulacao:
         self.valor_medio_tempo = valor_medio_tempo
         self.duracao = duracao
        
-        self.f = open('resultado_uni.txt', 'w')
+        self.f = open('resultado_normal.txt', 'w')
         
     def get_distribuicao(self):
         if self.tipo_distribuicao == "normal":
             return np.random.normal(self.parametros[0],self.parametros[1],self.parametros[2])
         elif self.tipo_distribuicao == "exponencial":
-            return np.random.exponential(self.parametros[0],self.parametros[2])
+            return np.random.exponential(self.parametros[1],self.parametros[2])
         elif self.tipo_distribuicao == "uniforme":
             return np.random.uniform(self.parametros[0],self.parametros[1],self.parametros[2])
 			
-    def run(self):		
-        self.distribuicao = self.get_distribuicao()
+    def run(self):
         self.dist_termino = np.random.exponential(1,self.parametros[2])
         self.simular()
     
     def simular(self):
         for n in xrange(self.qtd_repeticoes):
+            self.distribuicao = self.get_distribuicao()
             inicio = time.time()
             qtd_requisicoes_fila = 0
             fila_len_counter = 0
@@ -118,5 +118,5 @@ class Simulacao:
         "Quantidade média de elementos em espera:" + str(self.media_elem_espera) + "\n" +
         "\n\n")
 
-sim = Simulacao("normal",5,[0,0.1,1000000],4,5)
+sim = Simulacao("normal",15,[0,0.4,1000000],4,5)
 sim.run()
